@@ -1,3 +1,6 @@
+## Live Demo
+https://simple-calculator-react-redux.herokuapp.com/
+
 ## Available Scripts
 
 In the project directory, you can run:
