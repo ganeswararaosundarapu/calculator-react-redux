@@ -8,7 +8,7 @@ class Calcualtor extends Component{
     console.log("Calculator Render callback called");
     const { submitHandler, currentVal, memoryVal, error, btnLists } = this.props;
     return (
-      <div class="container">
+      <div className="container">
         <div className="calContainer">
           <h2 className="text-center"> Calculator </h2>
           <div>
@@ -22,6 +22,8 @@ class Calcualtor extends Component{
 
           {parseInt((memoryVal||0)) > 0 && <div className="text-center"> Memory Value: {memoryVal} </div>}
         </div>
+
+        <Hint />
       </div>
     )
   }
@@ -36,6 +38,3 @@ Calcualtor.propTypes = {
 }
 
 export default Calcualtor;
-
-  // <input type="text" ref={this.inputMyRef} />
-  // <button onClick={() => submitHandler.bind(this, this.inputMyRef.current.value)()}></button>
